@@ -1,4 +1,8 @@
-.App {
+@import './sass/variables';
+@import './sass/mixins';
+@import './sass/container';
+@import './sass/title';
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +39,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

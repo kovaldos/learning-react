@@ -1,0 +1,17 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+@import '../../sass/title';
+@import '../../sass/container';
+
+.message {
+	background-color: $color-ghost-white;
+	&-author {
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+	}
+	&-text {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+}
+
