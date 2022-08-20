@@ -1,0 +1,13 @@
+.input {
+	width: 100%;
+	max-width: 500px;
+	min-height: 2rem;
+	border: 1px solid $color-default-black;
+	padding: 0.5em;
+	font-size: 1rem;
+	margin: 0.5em 0 0.5em;
+	border-radius: 0.5em;
+	&:not(:last-of-type) {
+		margin: 0.5em 0.5em 0.5em 0;
+	}
+}

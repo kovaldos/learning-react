@@ -1,0 +1,63 @@
+.btn {
+  max-width: 500px;
+  width: fit-content;
+  display: flex;
+  margin: 0.5em 0;
+  padding: 0.5em 1em;
+  color: $color-default-white;
+  background-color: $color-neon-blue;
+  border: none;
+  cursor: pointer;
+  transition: opacity $trans-default, background-color $trans-default, border-color $trans-default, color $trans-default;
+  border-radius: 0.5em;
+  &--out-orange {
+    border: 1px solid $color-outrageous-orange;
+    color: $color-outrageous-orange;
+    background-color: $color-transparent;
+  }
+  &--orange {
+    background-color: $color-outrageous-orange;
+  }
+  &--transp {
+    background-color: $color-transparent;
+  }
+  &--reset {
+    border: 0;
+    background-color: $color-transparent;
+    
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:focus {
+      outline: none;
+    }
+    &--out-orange {
+      &:hover,
+      &:focus-visible {
+        background-color: rgba($color-outrageous-orange, 0.1);
+        border-color: $color-orange-red;
+        color: $color-orange-red;
+      }
+      &:active {
+        background-color: rgba($color-outrageous-orange, 0.2);
+        color: $color-harley-davidson-orange;
+        border-color: $color-harley-davidson-orange;
+      }
+    }
+    &--orange {
+      &:hover,
+      &:focus-visible {
+        background-color: $color-orange-red;
+      }
+      &:active {
+        background-color: $color-harley-davidson-orange;
+      }
+    }
+  }
+}

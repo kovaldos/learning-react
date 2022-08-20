@@ -1,0 +1,36 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $color-default-black;
+  transition: color $trans-default;
+  outline: none;
+  position: relative;
+  padding: 5px;
+  margin: -5px;
+  &::after {
+    position: absolute;
+    bottom: 8px;
+    content: "";
+    width: calc(100% - 2 * 5px);
+    max-width: 0;
+    height: 1px;
+    background-color: $color-default-black;
+    transition: all $trans-default;
+  }
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:focus {
+      outline: none;
+    }
+    &:hover,
+    &:focus-visible {
+      text-decoration: none;
+      &::after {
+        max-width: 100%;
+      }
+    }
+  }
+}

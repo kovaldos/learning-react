@@ -1,0 +1,18 @@
+// Vendor
+// ---------------------------------
+
+@import "./styles/vendor/normalize";
+// Swiper 7.4.1
+// @import "vendor/swiper";
+// Simplebar
+// @import "vendor/simplebar";
+// Global
+// ---------------------------------
+
+@import "./styles/variables";
+@import "./styles/mixins";
+@import "./styles/functions";
+@import "./styles/global/fonts";
+@import "./styles/global/reboot";
+@import "./styles/global/utils";
+@import "./styles/global/container";
